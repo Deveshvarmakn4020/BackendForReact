@@ -1,0 +1,95 @@
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.main-content {
+  width: 85%;
+  padding: 5px;
+  margin-left: 40px;
+}
+
+.home {
+  width: 15%;
+  padding: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 425px) {
+  .content {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .main-content {
+    width: 100%; /* Full width on small screens */
+    margin-left: 0; /* Reset margin */
+  }
+
+  .home {
+    width: 100%; /* Full width on small screens */
+    padding: 10px;
+  }
+
+  .tables {
+    width: 100%; /* Full width on small screens */
+    margin: 0; /* Reset margin */
+  }
+
+  .data-grid {
+    width: 100%; /* Full width on small screens */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+}
+
+/* Ensure alignment for intermediate screen sizes */
+@media screen and (min-width: 376px) and (max-width: 424px) {
+  .content {
+    justify-content: center; /* Center content horizontally */
+  }
+
+  .main-content, .home {
+    width: 90%; /* Adjust width for better alignment */
+    padding: 0 10px; /* Add some padding for better visual */
+  }
+}
+
+/* Original alignment for larger screens */
+@media screen and (min-width: 426px) {
+  .content {
+    flex-direction: row; /* Align elements horizontally */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .main-content {
+    width: 85%; /* Original width */
+    margin-left: 40px; /* Original margin */
+  }
+
+  .home {
+    width: 15%; /* Original width */
+    padding: 10px; /* Original padding */
+  }
+
+  .tables {
+    width: auto; /* Reset width */
+    margin: auto; /* Reset margin */
+  }
+
+  .data-grid {
+    width: auto; /* Reset width */
+  }
+}

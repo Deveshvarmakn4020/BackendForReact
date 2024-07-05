@@ -1,0 +1,36 @@
+.create-poll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.5s ease;
+}
+
+.create-poll-box {
+  max-width: 500px;
+  margin: 15px;
+  padding: 20px;
+  background-color: #e3f2fd;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.create-poll-button-container {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 600px) {
+  .create-poll-container {
+    align-items: center;
+  }
+}
+
+@media (max-width: 435px) {
+  .create-poll-container {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

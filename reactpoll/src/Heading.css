@@ -1,0 +1,44 @@
+:root {
+  --header-font-size: 2rem; /* Default font size */
+  --header-font-size-small: 1.5rem;
+  --header-font-size-big: 2rem;  /* Font size for small screens */
+
+}
+
+.header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  background-color: #e8f5e9;
+  padding: 30px;
+  margin-left: -10px;
+  margin-right: -100%;
+  width: 75%;
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  max-width: 100%; /* Set maximum width to 100% of viewport width */
+  transition: width 0.5s ease; /* Smooth transition for width change */
+}
+
+.header-title {
+  padding: 10px;
+  cursor: pointer;
+  font-size: var(--header-font-size); /* Use custom property for font size */
+}
+
+@media (max-width: 566px) {
+  .header {
+    width: 100%; /* Set width to 100% at 566px and below */
+    margin-left: 0; /* Reset margins if needed */
+    margin-right: 0;
+  }
+}
+
+/* Media query for screens with max-width of 425px */
+@media (max-width: 425px) {
+  .header {
+    text-align: left; /* Ensuring the header content is centered */
+  }
+
+  .header-title {
+    font-size: var(--header-font-size-big); /* Use smaller font size for small screens */
+  }
+}

@@ -1,0 +1,16 @@
+/* PollsTable.css */
+
+.polls-table-container {
+  width: 100%; /* Fill the available width */
+  padding: 10px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: center; /* Center the table */
+  overflow-x: auto;
+  margin-right: 140px; /* Enable horizontal scrolling */
+}
+
+.data-grid {
+  width: 100%; /* Full width on small screens */
+  max-width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
